@@ -6,6 +6,34 @@
 			"type": "operation/delete-node"
 		}
 	},
+	":contextual-insert-lcObjective--above": {
+		"label": "t__Add objective above",
+		"description": "t__Describes a single learning objective.",
+		"steps": {
+			"type": "operation/insert-next-to-context-node",
+			"data": {
+				"side": "before",
+				"childNodeStructure": [
+					"lcObjective",
+					[{ "bindTo": "selection", "empty": true }]
+				]
+			}
+		}
+	},
+	":contextual-insert-lcObjective--below": {
+		"label": "t__Add objective below",
+		"description": "t__Describes a single learning objective.",
+		"steps": {
+			"type": "operation/insert-next-to-context-node",
+			"data": {
+				"side": "after",
+				"childNodeStructure": [
+					"lcObjective",
+					[{ "bindTo": "selection", "empty": true }]
+				]
+			}
+		}
+	},
 	":insert-lcObjectives": {
 		"label": "t__Objectives",
 		"description": "t__Lists or describes the learning goals.",

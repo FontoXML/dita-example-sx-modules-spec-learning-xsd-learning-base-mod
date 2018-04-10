@@ -150,6 +150,10 @@ define([
 		// lcObjective
 		//     The <lcObjective> describes a single learning objective.
 		configureAsBlock(sxModule, 'self::lcObjective', t('objective'), {
+			contextualOperations: [
+				{ name: ':contextual-insert-lcObjective--above' },
+				{ name: ':contextual-insert-lcObjective--below' }
+			],
 			emptyElementPlaceholderText: t('type the objective'),
 			blockBefore: [
 				createLabelQueryWidget('"\u25cf"')
