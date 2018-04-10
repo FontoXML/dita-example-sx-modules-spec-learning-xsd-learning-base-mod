@@ -1,6 +1,6 @@
 {
-	":contextual-delete-lcRecources": {
-		"label": "t__Remove recources",
+	":contextual-delete-lcResources": {
+		"label": "t__Remove resources",
 		"icon": "times",
 		"steps": {
 			"type": "operation/delete-node"
