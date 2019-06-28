@@ -1,16 +1,6 @@
-define([
-	'fontoxml-modular-ui/uiManager',
+import uiManager from 'fontoxml-modular-ui/src/uiManager.js';
+import TimeValueModal from './ui/TimeValueModal.jsx';
 
-	'./ui/TimeValueModal.jsx'
-], function (
-	uiManager,
-
-	TimeValueModal
-) {
-	'use strict';
-
-	return function install () {
-		uiManager.registerReactComponent('TimeValueModal', TimeValueModal);
-
-	};
-});
+export default function install() {
+	uiManager.registerReactComponent('TimeValueModal', TimeValueModal);
+}
